@@ -1,29 +1,3 @@
-<<<<<<< HEAD
-
-# Project Title
-124
-
-## Project description
-124
-
-## Table of Contents
-[object Object]
-
-### Installation
-sdf
-
-## Usage
-sdf
-
-## Contributing
-sdf
-
-## Questions
-
-
-## GitHub username: sgssdfsdf
-## GitHub email: sdfsdf
-=======
 # Unit 09 Node.js and ES6+ Homework: Good README Generator
 
 Create a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:
@@ -123,4 +97,3 @@ You are required to submit the following:
 
 * The URL of the GitHub repository
 
->>>>>>> 9ec80ff3e01971983acb88e48e3394d0ea20d9f7
