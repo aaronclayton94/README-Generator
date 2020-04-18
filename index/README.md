@@ -24,8 +24,7 @@ axios node.js
 test
 
 ## GitHub username & Email
-aaronclayton94
-aaronclayton94@hotmail.com
+aaronclayton94 / aaronclayton94@hotmail.com
 
 
 [![aaron](https://img.shields.io/github/followers/aaronclayton94?label=follow&style=social)](https://github.com/aaronclayton94)
