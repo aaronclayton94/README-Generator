@@ -1,9 +1,9 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
-const axios = require("axios");
 
 const writeFileAsync = util.promisify(fs.writeFile);
+
 
 function promptUser() {
     return inquirer.prompt([
@@ -61,6 +61,8 @@ function generateMD(data) {
 # ${data.title}
 ${data.description}
 
+## Repository url / Deployed application url
+
 ## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -80,12 +82,10 @@ ${data.contributing}
 ## Tests
 ${data.tests}
 
-## GitHub username:
-${data.name}
-## GitHub email:
-${data.email}
-\n
-[![aaron](https://img.shields.io/github/followers/aaronclayton94?label=follow&style=social)](https://github.com/aaronclayton94)
+## GitHub username & Email
+${data.name}${data.email}
+
+\n[![aaron](https://img.shields.io/github/followers/aaronclayton94?label=follow&style=social)](https://github.com/aaronclayton94)
 `;
 }
 
@@ -98,7 +98,7 @@ promptUser()
         return writeFileAsync("README.md", md);
     })
     .then(function() {
-        console.log("success");
+        console.log("Successfully generated README file");
     })
     .catch(function(err) {
         console.log(err);

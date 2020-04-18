@@ -1,6 +1,8 @@
 
-# Project 2
-test
+# Project Test
+Test project using api
+
+## Repository url / Deployed application url
 
 ## Table of Contents
 - [Installation](#Installation)
@@ -10,21 +12,19 @@ test
 - [Tests](#Tests)
 
 ## Installation
-npm i
+npm install
 
 ## Usage
-node
+axios node.js
 
 ## Contributing
-aa
+
 
 ## Tests
 test
 
-## GitHub username:
-aaron
-## GitHub email:
-lol
+## GitHub username & Email
+aaronclayton94aaronclayton94@hotmail.com
 
 
 [![aaron](https://img.shields.io/github/followers/aaronclayton94?label=follow&style=social)](https://github.com/aaronclayton94)
