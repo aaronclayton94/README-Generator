@@ -1,9 +1,9 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
+const axios = require("axios");
 
 const writeFileAsync = util.promisify(fs.writeFile);
-
 
 function promptUser() {
     return inquirer.prompt([
@@ -55,9 +55,10 @@ function promptUser() {
     ])
 }
 
+
 function generateMD(data) {
     return `
-#${data.title}
+# ${data.title}
 ${data.description}
 
 ## Table of Contents
@@ -83,9 +84,12 @@ ${data.tests}
 ${data.name}
 ## GitHub email:
 ${data.email}
+\n
 [![aaron](https://img.shields.io/github/followers/aaronclayton94?label=follow&style=social)](https://github.com/aaronclayton94)
 `;
 }
+
+
 
 promptUser()
     .then(function(data) {
