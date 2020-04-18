@@ -55,13 +55,10 @@ function promptUser() {
     ])
 }
 
-function generateMD(answers) {
+function generateMD(data) {
     return `
-# Project Title
-${answers.title}
-
-## Project description
-${answers.description}
+#${data.title}
+${data.description}
 
 ## Table of Contents
 - [Installation](#Installation)
@@ -69,31 +66,30 @@ ${answers.description}
 - [License](#License)
 - [Contributing](#Contributing)
 - [Tests](#Tests)
-- [Questions](#Questions)
 
-### Installation
-${answers.installation}
+## Installation
+${data.installation}
 
-## Usage <a name="usage"></a>
-${answers.usage}
+## Usage
+${data.usage}
 
 ## Contributing
-${answers.contributing}
+${data.contributing}
 
-##Tests
-${answers.tests}
+## Tests
+${data.tests}
 
 ## GitHub username:
-${answers.name}
+${data.name}
 ## GitHub email:
-${answers.email}
+${data.email}
 [![aaron](https://img.shields.io/github/followers/aaronclayton94?label=follow&style=social)](https://github.com/aaronclayton94)
 `;
 }
 
 promptUser()
-    .then(function(answers) {
-        const md = generateMD(answers);
+    .then(function(data) {
+        const md = generateMD(data);
 
         return writeFileAsync("README.md", md);
     })
