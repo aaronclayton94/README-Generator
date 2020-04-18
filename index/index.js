@@ -19,11 +19,6 @@ function promptUser() {
         },
         {
             type: "input",
-            name: "contents",
-            message: "Table of Contents",
-        },
-        {
-            type: "input",
             name: "installation",
             message: "Installation",
         },
@@ -34,6 +29,11 @@ function promptUser() {
         },
         {
             type: "input",
+            name: "license",
+            message: "License",
+        },
+        {
+            type: "input",
             name: "contributing",
             message: "Contributing",
         },
@@ -41,11 +41,6 @@ function promptUser() {
             type: "input",
             name: "tests",
             message: "Tests",
-        },
-        {
-            type: "input",
-            name: "questions",
-            message: "Questions",
         },
         {
             type: "input",
@@ -69,19 +64,24 @@ ${answers.title}
 ${answers.description}
 
 ## Table of Contents
-${answers}
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+- [Questions](#Questions)
 
 ### Installation
 ${answers.installation}
 
-## Usage
+## Usage <a name="usage"></a>
 ${answers.usage}
 
 ## Contributing
 ${answers.contributing}
 
-## Questions
-${answers.questions}
+##Tests
+${answers.tests}
 
 ## GitHub username:
 ${answers.name}
@@ -95,7 +95,7 @@ promptUser()
     .then(function(answers) {
         const md = generateMD(answers);
 
-        return writeFileAsync("readme.md", md);
+        return writeFileAsync("README.md", md);
     })
     .then(function() {
         console.log("success");
