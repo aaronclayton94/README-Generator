@@ -83,7 +83,8 @@ ${data.contributing}
 ${data.tests}
 
 ## GitHub username & Email
-${data.name}${data.email}
+${data.name}
+${data.email}
 
 \n[![aaron](https://img.shields.io/github/followers/aaronclayton94?label=follow&style=social)](https://github.com/aaronclayton94)
 `;
