@@ -1,6 +1,6 @@
 function generateMarkdown(data) {
   return `
-# ${data.title} ![](https://img.shields.io/badge/License-${data.license}-important)
+# ${data.title}
 
 # Description
 ${data.description}
@@ -34,8 +34,8 @@ ${data.usage}
 
 ${data.contributing}
 
-# Liscence <br />
-${data.license}
+# License <br />
+![](https://img.shields.io/badge/License-${data.license}-important)
 
 # Questions
 If You Have any Questions, You can Reach Me at My email: aaronclayton94@hotmail.com  

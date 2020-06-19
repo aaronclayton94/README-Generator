@@ -63,7 +63,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((response) => {
     api.getUser(response.github).then(({ data }) => {
-      writeToFile("README.MD", generateMD({ ...response, ...data }));
+      writeToFile("README.MD", generateMD({ response, data }));
       console.log("Successfully generated README file");
     });
   });
