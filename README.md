@@ -1,8 +1,8 @@
 
-# undefined ![](https://img.shields.io/badge/License-undefined-important)
+# lol ![](https://img.shields.io/badge/License-MIT-important)
 
 # Description
-undefined
+test
 
 # Table of Contents
 * [Installation](#installation)
@@ -15,28 +15,28 @@ undefined
 # Installation
 Run This Snippet to Run Dependencies 
 ```
-undefined 
+npm i 
 ```
 
 # Tests
 Run the Tests with This Snippet
 ```
-undefined
+ 
 ```
 
 # Usage
 <br />
-undefined
+Usage
 
 # Contributing
 <br />
 
-undefined
+
 
 # License <br />
-undefined
+MIT
 
 # Questions
 If You Have any Questions, You can Reach Me at My email: aaronclayton94@hotmail.com  
 <hr/>
-<img src="undefined" alt="Github Avatar" style="border-radius:50px" width="100px"/>
+<img src="https://avatars0.githubusercontent.com/u/59687895?v=4" alt="Github Avatar" style="border-radius:50px" width="100px"/>
